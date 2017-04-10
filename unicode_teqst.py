@@ -10,8 +10,12 @@ import sys
 class unicode_teqst(object):
     '''
     classdocs
+	ाअआ िीइईुूउऊेैएऐऍऎोौओऔॊऒ 
     '''
     inglisstr = u'AaiiuueeooqQgGRcCjJntTdDnxXwWnpfbBmyrlvSsshaiiueeo.uNoL'
+    hindistr = u'अआइईउऊएऐओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसहािीुेैो।ूंौ'
+    xelgustr = u'అఆఇఈఉఊఎఏఒఓకఖగఘఱచఛజఝఞటఠడఢణతథదధనపఫబభమయరలవశసషహాి్ుేీో.ూంౌ'
+    qnnARastr = u'ಅಆಇಈಉಊಎಏಓಔಕಖಗಘಱಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಲವಶಷಸಹಾಿೀುೆೇೋ.ೂಙೌಳ'    	
     def __init__(self, uteqst):
         '''
         Constructor
@@ -113,22 +117,19 @@ class unicode_teqst(object):
             to_list = to_unichr(to_list)
             return translate(from_list, to_list, source)
 
-    def hinditr(self):
-        hindistr = u'अआइईउऊएऐओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसहािीुेैो।ूंौ'    
-        hinwiteqst = self.tr(hindistr, self.inglisstr, self.uteqst)
+    def hinditr(self):            
+        hinwiteqst = self.tr(self.hindistr, self.inglisstr, self.uteqst)
         hinwiteqst = hinwiteqst.replace(u'्','')
         hinwiteqst = hinwiteqst.replace(u'़','')
 #         hinwiteqst = hinwiteqst.replace(u'ं','')
         return hinwiteqst
 
-    def xelgutr(self):
-        xelgustr = u'అఆఇఈఉఊఎఏఒఓకఖగఘఱచఛజఝఞటఠడఢణతథదధనపఫబభమయరలవశసషహాి్ుేీో.ూంౌ'    
-        xelguteqst = self.tr(xelgustr, self.inglisstr, self.uteqst)
+    def xelgutr(self):        
+        xelguteqst = self.tr(self.xelgustr, self.inglisstr, self.uteqst)
         return xelguteqst
 
-    def qnnRatr(self):
-        qnnARastr = u'ಅಆಇಈಉಊಎಏಓಔಕಖಗಘಱಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಲವಶಷಸಹಾಿೀುೆೇೋ.ೂಙೌಳ'    
-        qnnRateqst = self.tr(qnnARastr, self.inglisstr, self.uteqst)
+    def qnnRatr(self):        
+        qnnRateqst = self.tr(self.qnnARastr, self.inglisstr, self.uteqst)
         qnnRateqst = qnnRateqst.replace(u'್','')
         qnnRateqst = qnnRateqst.replace(u'ಂ','')
         return qnnRateqst
