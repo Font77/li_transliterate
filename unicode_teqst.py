@@ -11,11 +11,21 @@ class unicode_teqst(object):
     '''
     classdocs
 	ाअआ िीइईुूउऊेैएऐऍऎोौओऔॊऒ 
-    '''
-    inglisstr = u'AaiiuueeooqQgGRcCjJntTdDnxXwWnpfbBmyrlvSsshaiiueeo.uNoL'
-    hindistr = u'अआइईउऊएऐओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसहािीुेैो।ूंौ'
-    xelgustr = u'అఆఇఈఉఊఎఏఒఓకఖగఘఱచఛజఝఞటఠడఢణతథదధనపఫబభమయరలవశసషహాి్ుేీో.ూంౌ'
-    qnnARastr = u'ಅಆಇಈಉಊಎಏಓಔಕಖಗಘಱಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಲವಶಷಸಹಾಿೀುೆೇೋ.ೂಙೌಳ'    	
+    '''    inglisstr = ('qQgG' + 'NN' + 'cCjJn' + 'tTdDn' +
+                'xXwWn' + 'pfbBm' + 'yrRlL' +
+                'vSssh' + 'aAa' + 'iiii' + 'uuuu' +
+                'eeee' + 'eeee' + 'ooo' + 'ooo' + 'jf')
+    hindistr = (u'कखगघ' + u'ंं' + u'चछजझञ' + u'टठडढण'
+                u'तथदधन'  + u'पफबभम' + u'यरड़लळ' +
+                u'वशषसह' +u'ाअआ' + u'िीइई' + u'ुूउऊ' +
+                u'ेैएऐ'+ u'ॆएऍऎ' + u'ोौओऔ' + u'ॊऒ' + u'ज़फ़'
+                )
+    xelgustr = (u'కఖగఘ' + u'ంఙ' + u'చఛజఝఞ' + u'టఠడఢణ' +
+                u'తథదధన' + u'పఫబభమ' + u'యరఱలళ' + u'వశసషహ' +
+                u'ాఅఆ' + u'ిీఇఈ' +u'ుూఉఊ' +
+                u'ెేఎఏ' + u'ఐఏ' + u'ై'  + u'ొో' + u'ౌఒఓఔ' + u'్   '
+                )
+    qnnARastr = u'ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲಳವಶಷಸಹಆಅಾಿೀಇಈುೂಉಊೆೇೈಎಏಐೖೊೋೌಒಓಔಙ'  	
     def __init__(self, uteqst):
         '''
         Constructor
