@@ -7,12 +7,10 @@ rాm్
 '''
 import unicode_teqst
 if __name__ == '__main__':
-    ustr = u"ಈ ಹಿಂದೆ ನದಿಯಲ್ಲಿ ನೀರು ತುಂಬಿ ಹರಿಯುತ್ತಿತ್ತು. ಇಲ್ಲಿನ ಜನರು ಈ ನದಿ ನೀರನ್ನೇ ಕುಡಿಯಲು ಬಳಸುತ್ತಿದ್ದರು. ಆದರೆ ಈಗ ಪಯಸ್ವಿನಿ ನದಿಯನ್ನ ನೋಡಿ ನೀವೇ ಕಣ್ಣೀರು ಹಾಕುತ್ತೀರಾ. ಬಿಸಿಲಿನ ತಾಪಕ್ಕೆ ನೀರು ಕಡಿಮೆಯಾಗಿದೆ. ಇದ್ದ ಅಲ್ಪ ಸ್ವಲ್ಪ ನೀರು ಕಲ್ಮಶಗೊಂಡಿದೆ.[ನಾಳೆ ತಂದೆಯ ಅಸ್ಥಿ ವಿಸರ್ಜನೆಗೆ ಐಶ್ವರ್ಯಾ ರೈ ದಂಪತಿ ಮಂಗಳೂರಿಗೆ]"
-# adbarw maxadi xpraqi biww mೇle qೈ jೋdisiwLe raQi!
-    uobj = unicode_teqst.unicode_teqst(ustr)
-    unilist = [0xdc20,0xdc21,0xdc30]
-    unistrar = ''.join((unichr(x)) for x in unilist)
-    print unistrar
-    print unichr(unilist[0])
-#     print uobj.hinditr()
-    print uobj.qnnRatr()
+    # ustr_xelugu = u'అంగూర్  సంగం  ఆంగన్  దీన్ని ప్రయత్నించడానికి, దిగువ మీ భాషను మరియు ఇన్‌పుట్ సాధనాన్ని ఎంచుకుని, టైప్ చేయడాన్ని మొదలుపెట్టండి. '
+    # uobj_xelugu = unicode_teqst.unicode_teqst(ustr_xelugu)
+    # print uobj_xelugu.xelgutr()
+
+    ustr_hinwi = u'अनुप्रिया वर्मा, मुंबई। जैसे धरती के गर्भ में क्या क्या छिपा है किसी को नहीं पता। लगता है ठीक वैसा ही हाल बाहुबली का है। रिलीज़ को तीन हफ़्ते से कम समय बचा है लेकिन अब भी कुछ न कुछ हैरान करने वाली ख़बरें आ रही हैं। अब मामला उस महा सीन का है, जिसके बारे में सुनकर आ चौक जाएंगे। - See more at: http://www.jagran.com/entertainment/bollywood-baahubali-shoots-biggest-action-sequence-of-indian-cinema-15831201.html?src=p1#sthash.hqv9ZOUb.dpuf'
+    uobj_hinwi = unicode_teqst.unicode_teqst(ustr_hinwi)
+    print uobj_hinwi.hinwitr()
