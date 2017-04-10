@@ -10,7 +10,6 @@ import sys
 class unicode_teqst(object):
     '''
     classdocs
-	ाअआ िीइईुूउऊेैएऐऍऎोौओऔॊऒ 
     '''    inglisstr = ('qQgG' + 'NN' + 'cCjJn' + 'tTdDn' +
                 'xXwWn' + 'pfbBm' + 'yrRlL' +
                 'vSssh' + 'aAa' + 'iiii' + 'uuuu' +
