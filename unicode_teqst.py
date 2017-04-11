@@ -10,21 +10,30 @@ import sys
 class unicode_teqst(object):
     '''
     classdocs
-    '''    inglisstr = ('qQgG' + 'NN' + 'cCjJn' + 'tTdDn' +
-                'xXwWn' + 'pfbBm' + 'yrRlL' +
+    '''
+    mlyalmstr = (u'കഖഗഘ' + u'ങങ' + u'ചഛജഝഞ' + u'ടഠഡഢണ' +
+                u'തഥദധന' + u'പഫബഭമ' + u'യരറലളഴ' +
+                u'വശഷസഹ' + u'ാഅആ' + u'ിീഇഈ' + u'ുൂഉഊ' +
+                u'െേൈഎ' + u'ഏഐee' + u'ൊോൌഒഓഔ')
+    inglisstr = ('qQgG' + 'NN' + 'cCjJn' + 'tTdDn' +
+                'xXwWn' + 'pfbBm' + 'yrRlLl' +
                 'vSssh' + 'aAa' + 'iiii' + 'uuuu' +
                 'eeee' + 'eeee' + 'ooo' + 'ooo' + 'jf')
     hindistr = (u'कखगघ' + u'ंं' + u'चछजझञ' + u'टठडढण'
-                u'तथदधन'  + u'पफबभम' + u'यरड़लळ' +
+                u'तथदधन'  + u'पफबभम' + u'यरड़लळऴ' +
                 u'वशषसह' +u'ाअआ' + u'िीइई' + u'ुूउऊ' +
                 u'ेैएऐ'+ u'ॆएऍऎ' + u'ोौओऔ' + u'ॊऒ' + u'ज़फ़'
                 )
     xelgustr = (u'కఖగఘ' + u'ంఙ' + u'చఛజఝఞ' + u'టఠడఢణ' +
-                u'తథదధన' + u'పఫబభమ' + u'యరఱలళ' + u'వశసషహ' +
+                u'తథదధన' + u'పఫబభమ' + u'యరఱలళఌ' + u'వశసషహ' +
                 u'ాఅఆ' + u'ిీఇఈ' +u'ుూఉఊ' +
-                u'ెేఎఏ' + u'ఐఏ' + u'ై'  + u'ొో' + u'ౌఒఓఔ' + u'్   '
+                u'ెేైఎ' + u'ఏఐ' + u'ౖె' + u'ొోౌఒఓఔ'
                 )
-    qnnARastr = u'ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲಳವಶಷಸಹಆಅಾಿೀಇಈುೂಉಊೆೇೈಎಏಐೖೊೋೌಒಓಔಙ'  	
+    qnnARastr = (u'ಕಖಗಘ' + u'ಙಙ' + u'ಚಛಜಝಞ' + u'ಟಠಡಢಣ' +
+				u'ತಥದಧನ' + u'ಪಫಬಭಮ' + u'ಯರಱಳಌೡ' +
+				u'ವಶಷಸಹ' + u'ಆಅಾ' + u'ಿೀಇಈ' + u'ುೂಉಊ' +
+				u'ೆೇೈಎ' + u'ಏಏಐೖ' + u'ೊೋೌಒಓಔ')
+				
     def __init__(self, uteqst):
         '''
         Constructor
@@ -126,7 +135,7 @@ class unicode_teqst(object):
             to_list = to_unichr(to_list)
             return translate(from_list, to_list, source)
 
-    def hinditr(self):            
+    def hinwitr(self):            
         hinwiteqst = self.tr(self.hindistr, self.inglisstr, self.uteqst)
         hinwiteqst = hinwiteqst.replace(u'्','')
         hinwiteqst = hinwiteqst.replace(u'़','')
@@ -135,10 +144,15 @@ class unicode_teqst(object):
 
     def xelgutr(self):        
         xelguteqst = self.tr(self.xelgustr, self.inglisstr, self.uteqst)
+        xelguteqst = xelguteqst.replace(u'్','')
         return xelguteqst
-
+    def mlyalmtr(self):        
+        mlyalmteqst = self.tr(self.mlyalmstr, self.inglisstr, self.uteqst)
+        mlyalmteqst = mlyalmteqst.replace(u'്','')
+        return mlyalmteqst
     def qnnRatr(self):        
         qnnRateqst = self.tr(self.qnnARastr, self.inglisstr, self.uteqst)
         qnnRateqst = qnnRateqst.replace(u'್','')
+        qnnRateqst = qnnRateqst.replace(u'ೃ','')
         qnnRateqst = qnnRateqst.replace(u'ಂ','')
         return qnnRateqst
