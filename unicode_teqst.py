@@ -1,7 +1,6 @@
 # -*- coding: utf_8 -*-
 '''
 Created on Apr 6, 2017
-రియా
 @author: vimalk3
 '''
 import re
