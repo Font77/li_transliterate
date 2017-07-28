@@ -11,7 +11,7 @@ class unicode_teqst(object):
     classdocs
     '''
     inglisstr = (
-        'qQgG' + 'cCjJn' + 'tTdDn' +
+        'kKgG' + 'cCjJn' + 'tTdDn' +
         'xXwWn' + 'pfbBm' + 'yrRlLl' +
         'vSssh' + 'aAa' + 'iiii' + 'uuuu' +
         'eeee' + 'eeee' + 'ooo' + 'ooo' + 'NNNN' + 'jf'
@@ -103,7 +103,7 @@ class unicode_teqst(object):
         """
     
         def is_valid_type(source):
-            return isinstance(source, unicode)
+            return isinstance(source, str)
     
         def make_char_list(source):
             char_list = []
@@ -126,7 +126,7 @@ class unicode_teqst(object):
             return char_list
     
         def to_unichr(char_list):
-            return map(unichr, char_list)
+            return map(chr, char_list)
     
         def squeeze(from_list, source):
             for char in from_list:
